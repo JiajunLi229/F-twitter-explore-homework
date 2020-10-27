@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.navbar-ul {
+  display: flex;
+}
+
+.navbar-li {
+  margin: 3px;
+}
+
+.footer-button-login {
+  @include btn-variant(black, transparent, $primary-color);
+  color: $primary-color;
+}
+
+.footer-button-register {
+  @include btn-variant(black, $primary-color, $primary-color);
+  color: $white;
+}
