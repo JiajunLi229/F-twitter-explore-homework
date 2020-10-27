@@ -1,0 +1,43 @@
+.main-content {
+  @include center(flex, center, center);
+}
+
+.login-form {
+  @include center(flex, center, center);
+  flex-direction: column;
+  text-align: left;
+  width: 20%;
+  border: 1px solid $border-color;
+  border-radius: $border-radius-base;
+  padding: 20px 0;
+}
+
+.login-form-headline {
+  color: $white;
+}
+
+.label {
+  color: $gray;
+  width: 80%;
+  display: block;
+}
+
+.form-input {
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid $border-color;
+  width: 100%;
+}
+
+.forget-password {
+  width: 80%;
+  color: $primary-color;
+}
+
+.form-button-login {
+  @include btn-variant($primary-color, transparent, $primary-color);
+}
+
+.form-button-register {
+  @include btn-variant(black, $primary-color, $primary-color);
+}
